@@ -1,4 +1,4 @@
-# CSS Artwork
+# CSS Artworks
 
 ![sweetcat](https://user-images.githubusercontent.com/101992799/174930490-4f312a19-2d4a-4ed7-8bde-9a375047f8d7.png)
 ![image (1)](https://user-images.githubusercontent.com/101992799/174931219-0edc1ec2-803d-45e7-910c-62ae6acb7be6.png)

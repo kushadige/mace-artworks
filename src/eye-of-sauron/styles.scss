@@ -1,0 +1,56 @@
+$size-map: (
+    smallest: 30px,
+    xsmall: 60px,
+    small: 88px,
+    medium: 120px,
+    large: 150px,
+    huge: 180px,
+    responsive: 100%,
+);
+
+.eye {
+    width: 1em;
+    height: 1em;
+    background: transparent;
+    border-style: solid;
+    border-width: 0.2em;
+    border-color: #eca03d;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+@each $name, $size in $size-map {
+    .eye--#{$name} {
+        font-size: $size;
+        @extend .eye;
+    }
+}
+
+.eye::before,
+.eye::after {
+    content: '';
+    position: absolute;
+    width: 0.6em;
+    height: 0.6em;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 0.2em;
+    transform: rotate(-45deg);
+}
+.eye::before {
+    border-color: transparent transparent #eca03d #eca03d;
+    right: 100%;
+}
+.eye::after {
+    border-color: #eca03d #eca03d transparent transparent;
+    left: 100%;
+}
+.pupil {
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+    background: #84271c;
+}
